@@ -12,7 +12,6 @@ const Page = () => {
   const nn = level.slice(index);
   const mainIndex = Number(nn.slice(nn.indexOf("el") + 2)) - 1;
   const val = data[mainIndex];
-  //   console.log(val.examples);
 
   return (
     <div>

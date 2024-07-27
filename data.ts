@@ -2,8 +2,8 @@ export const data = [
   {
     id: 0,
     task: `Write a code to change the first 5 letters of the string ("Amazing Grace") to capital letters`,
-    answer: `const word = "Amazing Grace";
-const b = word.slice(0, 5).toUpperCase().concat(word.slice(5));`,
+    answer: `let word = "Amazing Grace";
+let b = word.slice(0, 5).toUpperCase().concat(word.slice(5));`,
     redirect: "level2",
     desc: "In the given example above, you'd have to write a code using JavaScript string method to turn the first 5 characters of the given string to uppercase",
     examples: [
