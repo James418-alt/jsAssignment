@@ -7,7 +7,7 @@ let b = word.slice(0, 5).toUpperCase().concat(word.slice(5));`,
     redirect: "level2",
     desc: "In the given example above, you'd have to write a code using JavaScript string method to turn the first 5 characters of the given string to uppercase",
     examples: [
-      { input: "fedora is cute", output: "FEDORa is cute" },
+      { input: "a farmer", output: "A FARmer" },
       { input: "i will be great", output: "I WILl be great" },
     ],
   },
