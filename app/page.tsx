@@ -14,32 +14,15 @@ import LeftSide from "./components/LeftSide";
 import RigthSide from "./components/RigthSide";
 import { addData } from "./global/slice";
 import { data } from "@/data";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <ResizablePanelGroup
-        className="grid grid-cols-2 gap-5 p-10"
-        direction="horizontal"
-      >
-        <ResizablePanel
-          className="col-span-1 border p-3 rounded-md"
-          defaultSize={60}
-        >
-          <LeftSide />
-        </ResizablePanel>
-
-        <ResizablePanel
-          className="col-span-1"
-          defaultSize={40}
-          maxSize={50}
-          minSize={30}
-        >
-          <RigthSide />
-
-          {/* <Button>Submit</Button> */}
-        </ResizablePanel>
-      </ResizablePanelGroup>
+    <div className="flex justify-center items-center flex-col gap-5">
+      Welcome to Js game..
+      <Button>
+        <Link href={"/stages/stage1/level1"}>Start Game</Link>
+      </Button>
     </div>
   );
 }

@@ -27,7 +27,7 @@ const RigthSide = ({ url, ans }: any) => {
       console.log("true");
     } else {
       setShow(false);
-      console.log("false");
+      console.log("fs");
     }
   };
   useEffect(() => {
